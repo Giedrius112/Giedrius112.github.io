@@ -49,7 +49,7 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Craftivo</h1>
+        <h1 class="sitename">MANO CV</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -331,89 +331,62 @@
 
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+ <section id="contact">
+  <h2>Kontaktai</h2>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span class="subtitle">Kontaktai</span>
-        <h2>Kontaktai</h2>
-        <p>Lauksiu jūsų pasiūlymų!</p>
-      </div><!-- End Section Title -->
+  <form id="contactForm" novalidate>
+    <div class="form-group">
+      <label>Vardas</label>
+      <input type="text" id="name" required>
+    </div>
 
-      <div class="container">
+    <div class="form-group">
+      <label>Pavardė</label>
+      <input type="text" id="surname" required>
+    </div>
 
-        <div class="row gy-4">
+    <div class="form-group">
+      <label>El. paštas</label>
+      <input type="email" id="email" required>
+    </div>
 
-          <div class="col-lg-4">
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-geo-alt"></i>
-              </div>
-              <div>
-                <h3>Adresas</h3>
-                <p>Paparčių g. 22, Viečiūnai, Druskininkai</p>
-              </div>
-            </div>
+    <div class="form-group">
+      <label>Telefono numeris</label>
+      <input type="text" id="phone" placeholder="+370 6xxxxxx" required>
+    </div>
 
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-telephone"></i>
-              </div>
-              <div>
-                <h3>Skambinkite</h3>
-                <p>+37067652779</p>
-              </div>
-            </div>
+    <div class="form-group">
+      <label>Adresas</label>
+      <input type="text" id="address" required>
+    </div>
 
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-envelope"></i>
-              </div>
-              <div>
-                <h3>Rašykite</h3>
-                <p>giedrius.suraucius@gmail.com</p>
-              </div>
-            </div>
+    <div class="form-group">
+      <label>Informacijos pateikimas (1–10)</label>
+      <input type="range" id="ratingInfo" min="1" max="10" value="5">
+    </div>
 
-          </div>
+    <div class="form-group">
+      <label>Svetainės sklandumas (1–10)</label>
+      <input type="range" id="ratingSmooth" min="1" max="10" value="5">
+    </div>
 
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form">
-              <div class="row gy-4">
+    <div class="form-group">
+      <label>Ar radote, ko ieškojote? (1–10)</label>
+      <input type="range" id="ratingFind" min="1" max="10" value="5">
+    </div>
 
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
+    <button type="submit">Siųsti</button>
+  </form>
 
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
+  <!-- REZULTATŲ IŠVEDIMAS -->
+  <div id="formResult"></div>
+</section>
 
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
+<!-- POPUP -->
+<div id="successPopup">Duomenys pateikti sėkmingai!</div>
 
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Jūsų pranešimas išsiųstas.</div>
 
-                  <button type="submit">Siųsti pranešimą</button>
-                </div>
-
-              </div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
 
   </main>
 
@@ -440,6 +413,8 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+ <script src="assets/js/custom.js"></script>
+
 
 </body>
 
