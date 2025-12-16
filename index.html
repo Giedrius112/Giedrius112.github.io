@@ -385,6 +385,38 @@
 <!-- POPUP -->
 <div id="successPopup">Duomenys pateikti sėkmingai!</div>
 
+<section id="memoryGame">
+  <h2>Mano žaidimas</h2>
+
+  <div class="game-controls">
+    <label>
+      Sudėtingumas:
+      <select id="difficulty">
+        <option value="easy">Lengvas (4x3)</option>
+        <option value="hard">Sunkus (6x4)</option>
+      </select>
+    </label>
+
+    <button id="startGame">Start</button>
+    <button id="resetGame">Atnaujinti</button>
+  </div>
+
+  <div class="game-stats">
+    <p>Ėjimai: <span id="moves">0</span></p>
+    <p>Poros: <span id="pairs">0</span></p>
+    <p id="timer">Laikas: 0 s</p>
+
+    <p>Geriausias (Lengvas): <span id="bestEasy">–</span></p>
+    <p>Geriausias (Sunkus): <span id="bestHard">–</span></p>
+  </div>
+
+  <div id="gameBoard" class="game-board"></div>
+
+  <p id="winMessage" class="hidden">🎉 Laimėjote!</p>
+</section>
+
+
+
 
 
 

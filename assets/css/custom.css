@@ -194,3 +194,49 @@ section {
 #successPopup.show {
   opacity: 1;
 }
+/* ===== MEMORY GAME ===== */
+#memoryGame {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.game-controls {
+  margin-bottom: 15px;
+}
+
+.game-controls button {
+  margin-left: 10px;
+}
+
+.game-stats {
+  margin: 15px 0;
+}
+
+.game-board {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  background: #444;
+  color: white;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.card.flipped,
+.card.matched {
+  background: #ff6b6b;
+}
+
+.hidden {
+  display: none;
+}
