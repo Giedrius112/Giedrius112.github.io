@@ -1,0 +1,121 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #ff9f43;
+}
+
+h3 {
+  font-size: 1.6rem;
+  text-transform: uppercase
+  color: #1dd1a1;
+}
+
+h4 {
+  font-size: 1.5rem;         
+  font-weight: 600;
+  color: #54a0ff;             
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+
+h5 {
+  font-size: 1.25rem;         
+  font-weight: 500;
+  color: #c56cf0;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.3px;
+}
+
+
+h6 {
+  font-size: 1rem;            
+  font-weight: 400;
+  color: #b2bec3;
+  margin-bottom: 0.25rem;
+  font-style: italic;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #ddd;
+}
+button,
+.btn {
+  background: #ff5c6c;
+  border-radius: 30px;
+  padding: 10px 22px;
+  transition: 0.3s;
+}
+button:hover,
+.btn:hover {
+  background: #ff2f44;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+a {
+  color: #ff5c6c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+section {
+  padding: 80px 0;
+}
+.section-box {
+  background: #111;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  padding: 40px;
+}
+nav {
+  backdrop-filter: blur(8px);
+  background: rgba(0,0,0,0.7);
+}
+.bar {
+  background: #222;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  background: linear-gradient(90deg, #ff5c6c, #ff8a9a);
+}
+body {
+  background-color: #0c0c0c;
+}
+.section-title h1 { color: #ff4d5a; }
+.section-title h2 { color: #ff9f43; }
+.section-title h3 { color: #1dd1a1; }
+/* ===== Global headings ===== */
+h1 { color: #ff4d5a !important; }
+h2 { color: #ff9f43 !important; }
+h3 { color: #1dd1a1 !important; }
+h4 { color: #54a0ff !important; }
+h5 { color: #c56cf0 !important; }
+h6 { color: #b2bec3 !important; }
+
+/* ===== Section titles (Craftivo override) ===== */
+.section-title h2 {
+  color: #ff9f43 !important;
+}
+
+.section-title .subtitle {
+  color: #ff4d5a !important;
+}
